@@ -15,16 +15,13 @@ import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
-import org.junit.runner.RunWith;
 
-import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 import de.klimek.jbehave_examples.LoggingStory;
 import de.klimek.jbehave_examples.atm.Account;
 import de.klimek.jbehave_examples.atm.Card;
 import de.klimek.jbehave_examples.atm.Dispenser;
 import de.klimek.jbehave_examples.atm.Money;
 
-@RunWith(JUnitReportingRunner.class)
 public class CustomerWithdrawsCash extends LoggingStory {
 	
 	private static final Money INITIAL_DISPENSER_CASH = new Money("10000");
